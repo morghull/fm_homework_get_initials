@@ -1,0 +1,61 @@
+:root {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.cardsHeading {
+  text-align: center;
+  font-size: 2rem;
+}
+.cardsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.cardWrapper {
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem;
+  border: 3px solid #ddd;
+}
+.cardContainer {
+  min-width: 300px;
+  width: 300px;
+  text-align: center;
+}
+.cardImageWrapper {
+  width: inherit;
+  height: 300px;
+  min-height: 300px;
+  position: relative;
+}
+.cardInitials {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  font-size: 4rem;
+}
+.cardImage {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: top;
+}
+.cardName,
+.cardDescription {
+  margin: 1rem;
+}
