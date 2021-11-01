@@ -105,11 +105,3 @@ function stringToColour(str) {
   return colour;
 }
 
-function getInitials(name, { separator = ' ' } = {}) {
-  return name
-    .toUpperCase()
-    .split(separator)
-    .slice(0, 2)
-    .map((item) => item.substr(0, 1))
-    .join('');
-}
